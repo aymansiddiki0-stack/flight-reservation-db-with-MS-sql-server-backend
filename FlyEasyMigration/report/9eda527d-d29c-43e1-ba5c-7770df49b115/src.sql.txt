@@ -1,0 +1,4 @@
+SELECT C.CustomerID, C.FirstName, C.LastName, SUM(p.PricePerTicket) AS TotalSpent, COUNT(p.PurchaseId) AS NumberOfPurchases
+FROM Customer AS C LEFT JOIN Purchase AS P ON C.CustomerID = P.CustomerID
+GROUP BY C.CustomerID, C.FirstName, C.LastName
+ORDER BY SUM(p.PricePerTicket) DESC;
