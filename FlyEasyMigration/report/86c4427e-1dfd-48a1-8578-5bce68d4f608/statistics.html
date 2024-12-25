@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link media="all" rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script type="text/javascript" src="../highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="../highcharts/accessibility.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/scenario.js"></script>
+  </head>
+  <body class="no-margin stats-body">
+    <div class="path"><div class='breadcrumbs'>
+      <span style="color: firebrick" id="00000000-0000-0000-0000-000000000000">Databases</span>
+      <a> &gt; </a>
+      <a class="breadcrumb" id="d2ccd721-2031-445c-8ef9-a73e91290ef0" href="javascript:void(0);" tabindex="0" onclick="treeNav(&#39;d2ccd721-2031-445c-8ef9-a73e91290ef0&#39;, null)">Copy</a>
+      <a> &gt; </a>
+      <span style="font-weight: bold; color: blue" id="86c4427e-1dfd-48a1-8578-5bce68d4f608">Queries</span>
+      </div>
+      <a tabindex='0' href='javascript:void(0);' role='button' aria-label='Minimize/maximize statistics' class='maximize-button' onclick='toggleAll()'>&#9974;</a>
+      <div class="clearfix"></div>
+    </div>
+    
+<div class='tab-navigation' >
+    <a id='stat-buttons-tab-0' class='stat-buttons-tab tab-selected' href='javascript:void(0);' tabindex='0' aria-label='Overview' role='tab' index='0' onclick='tabClicked(this)'>
+    
+        <div style='position:relative;top:4px;font-family:Arial;font-size:9.75pt;color:black;'>
+    Overview
+    
+        </div>
+    </a>
+    
+    <a id='stat-buttons-tab-2' class='stat-buttons-tab' href='javascript:void(0);' tabindex='0' aria-label='Details' role='tab' index='2' onclick='tabClicked(this)'>
+        <div style='position:relative;top:4px;font-family:Arial;font-size:9.75pt;color:black;'>Details</div>
+    </a>
+</div>
+
+    <div id="content-stat-buttons-tab-0" class="content-tab full-width">
+      <div class="scrollable-tab">
+        <div class="chart">
+          <div id="pieContainer">
+            <div id="pieConversion" class="half-width"></div>
+            <div id="pieEffort" class="half-width"></div>
+            <script>
+initPieChart(
+    [
+        {name: 'Automatic', y: 2, color: 'forestgreen'},
+        {name: 'Warning', y: 0, color: 'gold'},
+        {name: 'Error', y: 15, color: 'crimson'},
+    ],
+    'Object',
+    'Object Conversion<br>17 Object(s)',
+    'Breakdown of objects categorized by severity of conversion issues',
+    'pieConversion');
+initPieChart(
+    [
+        {name: 'Warning', y: 0, color: 'steelblue'},
+        {name: 'Error', y: 3.0, color: 'navy'},
+    ],
+    'Hour',
+    'Manual Conversion Time<br>3.0 Hour(s)',
+    'Distribution of estimated manual effort in hours',
+    'pieEffort');</script>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="chart-title">Objects Breakdown</div>
+        <div class="chart-subtitle">Child objects with conversion issues</div>
+        <div class="chart-legend-container">
+          <div class="sample info"></div>
+          Automatic
+          <div class="sample warning"></div>
+          Warning
+          <div class="sample error"></div>
+          Error
+          <br/>
+          <div class="sample warning-hours"></div>
+          Warning hours
+          <div class="sample error-hours"></div>
+          Error hours</div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;27430702-a529-4a73-b330-341a4375c537&#39;, null);">ADDRESS_QUERY</div>
+          <div id="barChart0" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;2c5988bb-d9c0-4628-97a3-447c92a7e90d&#39;, null);">AIRLINE_QUERY</div>
+          <div id="barChart1" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;6db6996b-a77d-4011-8952-bd699dac41bb&#39;, null);">AIRLINE_TABLE_FK_CONS</div>
+          <div id="barChart2" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;4659755d-0041-47fb-ac8c-e6ccae2679f6&#39;, null);">CUSTOMER_QUERY</div>
+          <div id="barChart3" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;86933419-eefa-4612-988f-997b3a499293&#39;, null);">CUSTOMER_TABLE_FK_CONS</div>
+          <div id="barChart4" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;358a5431-6019-4a62-a67d-7eed56db7d84&#39;, null);">FLIGHTS_QUERY</div>
+          <div id="barChart7" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;7d5afa31-8074-4b2b-8992-d3754b43c659&#39;, null);">FLIGHTS_TABLE_FK_CONS</div>
+          <div id="barChart8" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;39eabf7a-70fb-4f21-af4a-f5047c2d22c4&#39;, null);">FLIGHTSEAT_QUERY</div>
+          <div id="barChart9" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;38653352-37ad-4da0-a16e-b38092eb60e4&#39;, null);">FLIGHTSEAT_TABLE_FK_CONS</div>
+          <div id="barChart10" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;39634162-dadb-48a9-8660-9428d4332d59&#39;, null);">PAYMENT_QUERY</div>
+          <div id="barChart11" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;ab38f664-2771-43af-ae28-f18339cfb426&#39;, null);">PAYMENT_TABLE_FK_CONS</div>
+          <div id="barChart12" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;d8673998-054c-4990-9225-da3fde85d3a1&#39;, null);">PURCHASE_QUERY</div>
+          <div id="barChart13" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;6770d944-2fee-4ece-9bb8-bfe2a043851d&#39;, null);">PURCHASE_TABLE_FK_CONS_1</div>
+          <div id="barChart14" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;c6a1a24d-3ffa-45d7-b88d-d5aef3468729&#39;, null);">PURCHASE_TABLE_FK_CONS_2</div>
+          <div id="barChart15" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;c7c00773-e200-4fbb-83e2-65c55bdad192&#39;, null);">PURCHASE_TABLE_FK_CONS_3</div>
+          <div id="barChart16" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <script>barCharts.push({'barChartName':barChart0,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart1,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart2,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart3,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart4,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart7,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart8,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart9,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart10,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart11,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart12,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart13,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart14,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart15,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});barCharts.push({'barChartName':barChart16,'totalElements':1,'automaticElements':0,'errorElements':1,'warningElements':0,'infoElements':0,'errorHours':0.2,'warningHours':0});</script>
+      </div>
+    </div>
+    <div id="content-stat-buttons-tab-2" class="scrollable-tab content-tab full-width tab-content-hidden">
+      <div class="raw-data">
+        <table class="stats-table">
+          <caption>
+            <b>Objects Conversion</b>
+          </caption>
+          <colgroup>
+            <col style="width: 139px"></col>
+            <col style="width: 51px"></col>
+            <col style="width: 79px"></col>
+            <col style="width: 79px"></col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>Object type</th>
+              <th>Total</th>
+              <th>Converted</th>
+              <th>Objects with Issues</th>
+              <th>Error Objects</th>
+              <th>Warning Objects</th>
+              <th>Info Objects</th>
+              <th>Error Hours</th>
+              <th>Warning Hours</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr height="35">
+              <td class="align-left">
+                <span>query</span>
+              </td>
+              <td>
+                <span>17</span>
+              </td>
+              <td>
+                <span>11.76 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="raw-data">
+        <table class="stats-table">
+          <caption>
+            <div>
+              <b>Syntax Conversion</b>
+            </div>
+          </caption>
+          <colgroup>
+            <col style="width: 139px"></col>
+            <col style="width: 51px"></col>
+            <col style="width: 79px"></col>
+            <col style="width: 79px"></col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>Syntax element</th>
+              <th>Total</th>
+              <th>Converted</th>
+              <th>Syntax elements with Issues</th>
+              <th>Error elements</th>
+              <th>Warning elements</th>
+              <th>Info elements</th>
+              <th>Error Hours</th>
+              <th>Warning Hours</th>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>&lt;ALL&gt;</span>
+              </td>
+              <td>
+                <span>622</span>
+              </td>
+              <td>
+                <span>97.59 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>access-root</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>add-expression</span>
+              </td>
+              <td>
+                <span>36</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>alias</span>
+              </td>
+              <td>
+                <span>4</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>asc-desc-sort-attribute</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>basic-select-statement</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>bitwise-expression</span>
+              </td>
+              <td>
+                <span>36</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>comparison-pair-operator</span>
+              </td>
+              <td>
+                <span>3</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>complex-from-clause-item</span>
+              </td>
+              <td>
+                <span>3</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>dot-in-identifier</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>expression</span>
+              </td>
+              <td>
+                <span>36</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>expression-list</span>
+              </td>
+              <td>
+                <span>7</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>expression-list-item</span>
+              </td>
+              <td>
+                <span>29</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>from-clause</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>from-clause-item</span>
+              </td>
+              <td>
+                <span>6</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-and-condition</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-atomic-condition</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-eqv-level-condition</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-expression</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-or-condition</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>full-unary-condition</span>
+              </td>
+              <td>
+                <span>33</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>groupby-clause</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>identifier</span>
+              </td>
+              <td>
+                <span>41</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>join-type</span>
+              </td>
+              <td>
+                <span>3</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>mod-expression</span>
+              </td>
+              <td>
+                <span>36</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>on-condition</span>
+              </td>
+              <td>
+                <span>3</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>orderby-clause</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>order-by-list</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>order-by-list-item</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>query</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>select-expression-list</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>select-statement</span>
+              </td>
+              <td>
+                <span>2</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>simple-identifier</span>
+              </td>
+              <td>
+                <span>78</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>simple-identifier_params</span>
+              </td>
+              <td>
+                <span>3</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>unary-expression</span>
+              </td>
+              <td>
+                <span>36</span>
+              </td>
+              <td>
+                <span>100 %</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

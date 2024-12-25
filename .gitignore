@@ -1,0 +1,11 @@
+*.mdf
+*.ldf
+*.ldb
+*.laccdb
+*.mb
+*.tmp
+*.bak
+*.log
+Thumbs.db
+Desktop.ini
+reports/
