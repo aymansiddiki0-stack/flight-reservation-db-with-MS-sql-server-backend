@@ -1,3 +1,0 @@
-SELECT dbo_Airline.CompanyName, dbo_Flights.FlightID, dbo_Flights.DepAirportCode, dbo_Flights.DepartureDate, dbo_Flights.DepartureTime, dbo_Flights.ArrivalAirportCode, dbo_Flights.ArrivalDate, dbo_FlightSeat.Class, dbo_FlightSeat.SeatNumber, dbo_FlightSeat.SeatPrice
-FROM (dbo_Airline INNER JOIN dbo_Flights ON dbo_Airline.CompanyID = dbo_Flights.CompanyID) INNER JOIN dbo_FlightSeat ON dbo_Flights.FlightID = dbo_FlightSeat.FlightID
-GROUP BY dbo_Airline.CompanyName, dbo_Flights.FlightID, dbo_Flights.DepAirportCode, dbo_Flights.DepartureDate, dbo_Flights.DepartureTime, dbo_Flights.ArrivalAirportCode, dbo_Flights.ArrivalDate, dbo_FlightSeat.Class, dbo_FlightSeat.SeatNumber, dbo_FlightSeat.SeatPrice;
